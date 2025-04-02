@@ -22,7 +22,7 @@ library P256 {
     {
         // P256VERIFY address is 0x14 from <https://github.com/paradigmxyz/alphanet/blob/main/crates/precompile/src/addresses.rs>
         (bool success, bytes memory output) =
-            address(0x14).staticcall(abi.encode(digest, signature.r, signature.s, publicKey.x, publicKey.y));
+            address(0x100).staticcall(abi.encode(digest, signature.r, signature.s, publicKey.x, publicKey.y));
         success = success && output.length == 32 && output[31] == 0x01;
 
         return success;
