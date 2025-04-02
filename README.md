@@ -29,3 +29,9 @@ $ foundryup
 $ forge build # Build
 $ forge test # Test
 ```
+
+### Script
+
+```shell
+$ forge script contracts/script/DemoSepolia.s.sol --fork-url sepolia --broadcast  --chain-id 11155111 --slow
+```
