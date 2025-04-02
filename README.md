@@ -35,3 +35,5 @@ $ forge test # Test
 ```shell
 $ forge script contracts/script/DemoSepolia.s.sol --fork-url sepolia --broadcast  --chain-id 11155111 --slow
 ```
+
+Or commands to send a 7702 transaction: [https://github.com/ithacaxyz/odyssey-examples/tree/main/chapter1/simple-7702](https://github.com/ithacaxyz/odyssey-examples/tree/main/chapter1/simple-7702)
